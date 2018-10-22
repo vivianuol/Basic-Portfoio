@@ -1,0 +1,163 @@
+/* color pallete:
+Main header background color: #ffffff
+Main header border color: #cccccc
+Footer background color: #666666
+Main content background color: #ffffff
+Main content border color: #dddddd
+ */
+
+* {
+    box-sizing: border-box;
+    color: #777777;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    position: relative;
+    background: url(https://images.unsplash.com/photo-1526541260187-fe49a4f44fc5?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=753882758d333a4e8c8ba87b053e039e&auto=format&fit=crop&w=1050&q=80), no-repeat, center, center, fixed;
+    background-size: cover;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.title-bar {
+    position: fixed;
+    top:0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    margin: 0;
+    border-bottom:2px solid #cccccc;
+    background: #ffffff;
+}
+
+.frame {
+    position: absolute;
+    left: 15%;
+    width: 70%;
+    margin: 0 auto;
+    height: 80px;
+}
+
+.showcase {
+    position: absolute;
+    left: 15%;
+    top: 80px;
+    width: 70%;
+    margin: 30px auto;
+    background-color: #ffffff;
+    z-index: -1;
+}
+
+.logo {
+    width: 200px;
+    height: 78px;
+    padding: 20px;
+    float: left;
+    color:#ffffff;
+    background:#4aaaa5;
+}
+
+.navbar {
+    height: 80px;
+    padding: 20px 0;
+    float: right;
+}
+
+.mainbody {
+    margin: 20px;
+}
+
+.mainbody2 {
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+img {
+    margin-right: 20px;
+    margin-bottom: 20px;
+    float: left;
+    z-index: -1;
+}
+
+.aspect {
+    position: relative;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.aspect img{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+.banner {
+    position: absolute;
+    bottom: 30px;
+    width: 100%;
+    text-align: center;
+    background: #4aaaa5;
+}
+
+a {
+    text-decoration: none;
+}
+
+a, p {
+    color: grey;
+}
+
+.logo, .aboutme, .contact, .portfolio{
+    font-family: 'Source Serif Pro', serif;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.aboutme, .contact, .portfolio {
+    margin: 20px 20px 0 20px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #dddddd;
+    color: #4aaaa5;
+}
+
+form, input{
+    color: gray;
+}
+
+form div{
+    padding: 10px 0;
+}
+
+
+@media only screen and (max-width: 530px) {
+.logo {
+    width: 100%;
+    height: 50%;
+}
+
+.navbar {
+    width: 100%;
+}
+
+}
+
+@media only screen and (max-width: 390px) {
+
+textarea {
+    width: 100%;
+    height: 200px;
+    
+}
+}
