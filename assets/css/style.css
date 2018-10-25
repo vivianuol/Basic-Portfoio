@@ -141,6 +141,28 @@ form div{
     padding: 10px 0;
 }
 
+.footer {
+    /* child-element centered vertically */
+    display: flex;
+    align-items: center;
+    /* stick to the bottom */
+    position: fixed;
+    left: 0;
+    bottom: 0;
+
+    width: 100%;
+    height: 60px;
+    border-top: 2px solid #4aaaa5;
+    background: #666666;
+}
+
+.footer h5 {
+    color: #cccccc;
+    font-size: 15px;
+    /* centered horizontally */
+    margin: 0 auto;
+}
+
 
 @media only screen and (max-width: 530px) {
 .logo {
